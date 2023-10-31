@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+
+}
+.navber{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: skyblue;
+}
+.Glass{
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    font-size: large;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    pointer-events: visibleFill;
+}
+.parents{
+    width: 100%;
+    height: 60vh;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    /* gap: 2%; */
+}
+.welcome{
+    width: 100%;
+    background-color: blue;
+    background-image: url(images/hosp3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome1{
+    width: 70%;
+    background-color: aliceblue;
+    
+}
+.text{
+    margin-left: 5rem;
+    font-size: large;
+    margin-top: 10%;
+}
+.text >h1{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    letter-spacing: 0.3em;
+    text-shadow: 0  2px skyblue;
+    font-size: 40px;
+}
+.text >h2{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 5rem;
+    letter-spacing: 0.2em;
+    font-size: larger;
+
+}
+.welcome1{
+    justify-content: center;
+    /* margin-top: 1em; */
+    /* display: flex; */
+    /* gap: 2%; */
+}
+.welcome1 >h1{
+    text-align: center;
+    margin-top: 1em;
+}
+.welcome1{
+    /* text-align: center; */
+    margin-top: 1em;
+}
+.misson{
+    margin-left: 2rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    gap: 2%;
+}
+.text3 >h2{
+    color: rgb(7, 96, 148);
+}
