@@ -5,6 +5,7 @@
 }
 .container{
     width: 100%;
+    /* position: relative; */
 
 }
 .navber{
@@ -13,14 +14,21 @@
     align-items: center;
     height: 10vh;
     background-color: skyblue;
+    position: fixed;
+    /* opacity: 30px; */
 }
 .Glass{
+    width: 50px;
+    cursor: pointer;
+    opacity: below;
+}
+.menu{
     width: 50px;
     cursor: pointer;
 }
 nav{
     flex: 1;
-    text-align: center;
+    text-align: right;
 }
 nav ul li {
     display: inline-block;
@@ -36,6 +44,8 @@ nav ul li a{
 }
 .parents{
     width: 100%;
+    margin: auto;
+    /* margin-top: 1em; */
     height: 60vh;
     /* background-color: gray; */
     display: flex;
@@ -44,27 +54,42 @@ nav ul li a{
 }
 .welcome{
     width: 100%;
+    margin-top: 4em;
     background-color: blue;
-    background-image: url(images/hosp3.jpg);
+    background-image: url(images/hosptal2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .welcome1{
     width: 70%;
     background-color: aliceblue;
+    margin-top: 4em;
     
 }
 .text{
+    /* color:green; */
     margin-left: 5rem;
     font-size: large;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 5px 3px black;
     margin-top: 10%;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.text >button{
+    width: 12%;
+    /* margin-top: 1e; */
+    padding: .5rem;
+    border-radius: 10px 0 10px 0;
+    /* background-color: skyblue; */
 }
 .text >h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman' Times, serif;
     line-height: 3rem;
     letter-spacing: 0.3em;
-    text-shadow: 0  2px skyblue;
-    font-size: 40px;
+    text-shadow: 5px 2px skyblue;
+    color: green;
+    font-size: 50px;
 }
 .text >h2{
     font-family: 'Times New Roman', Times, serif;
@@ -73,27 +98,366 @@ nav ul li a{
     font-size: larger;
 
 }
+
 .welcome1{
     justify-content: center;
-    /* margin-top: 1em; */
-    /* display: flex; */
-    /* gap: 2%; */
 }
+
 .welcome1 >h1{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 3em;
+    text-shadow: 5px 1px skyblue;
 }
+
 .welcome1{
-    /* text-align: center; */
     margin-top: 1em;
 }
+
 .misson{
     margin-left: 2rem;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     gap: 2%;
 }
 .text3 >h2{
     color: rgb(7, 96, 148);
+}
+.doctors{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(176, 218, 235);
+}
+.doctors >h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1.5em;
+}
+.chief{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.doctor{
+    /* display: flex; */
+    border-radius: 15px;
+    width: 250px;
+    height: 450px;
+    background-color:whitesmoke;
+}
+.doctor >img{
+    width: 200px;
+    height: 230px;
+    margin-left: 2em;
+    margin-top: 2em;
+    border-radius: 110px;
+    transition: 0.5s;
+    
+}
+.doctor >img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    
+}
+.ster{
+    display: flex;
+    justify-content: center;
+}
+.doctor >h2{
+    text-align: center;
+}
+.doctor >p{
+    text-align: center;
+    margin:0 0 10px;
+}
+
+.doctor >button{
+    display: flex;
+    margin-left: 6.5em;
+    border-radius: 10px 0 10px 0;
+    margin-top: 0.5;
+    width: 34%;
+    text-align: center;
+    background-color: rgb(163, 219, 241);
+    border: 2px solid black;
+}
+
+.theater{
+    /* width: 100%; */
+    height: 70vh;
+    display: flex;
+    gap: 6%;
+    background-color: rgb(176, 218, 235);
+    
+}
+.theater2{
+    width: 35%;
+    /* margin: auto; */
+    /* background-color: red; */
+}
+
+.theater2 >h1{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 5px  white;margin-top: 2em;
+    letter-spacing: 0.2em;
+    
+}
+
+.theater2 >h2{
+    /* margin: 0 0 20px; */
+    margin-top: 1em;
+    /* color:; */
+    margin-left: 2em;
+}
+
+.theater2 >li{
+    margin-left: 2em;
+    margin-top: 1em;
+    text-align: justify;
+    
+}
+.theater1{
+    width: 55%;
+    background-image: url(images/hosp3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.theater1 >h1{
+    text-align: center;
+    margin-top: 20%;
+    letter-spacing: 1em;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.toggle .bar{
+    width: 30px;
+    height: 6px;
+    border-radius: 10px 10px;
+    background-color: black;
+    margin: 3px 0px;
+    display: none;
+    cursor: pointer;
+}
+.toggle .bar:first-child{
+    background-color: red;                                                                                                                                                                                                                                                                                                                                                                               
+
+}
+
+.visit{
+    background-color: rgb(176, 218, 235);
+    /* font-size: 30px;
+    text-align: center; */
+    height: 20vh;
+}
+.contact{
+    display: flex;
+     width: 100%;
+     height: 65vh;
+     background-image:url(images/medcl\ bg\ 2.webp ) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-size: 30px;
+     opacity: 0.9;
+    gap: 2%;
+}
+
+.form{
+    width: 500px;
+    height: 100%;
+    /* background-color: red; */
+}
+.form1{
+    width: 300px;
+    height: 100%;
+    /* background-color: red; */
+}
+input{
+    width: 60%;
+    padding: 1em;
+    /* text-align: center; */
+    border-radius: 10px;
+    
+}
+
+form{
+    margin-top: 3rem;
+    color: black;
+    text-shadow: 2px 3px white;
+}
+form{
+    margin-top: 3rem;
+    color: black;
+    text-shadow: 2px 3px white;
+}
+
+
+
+@media screen and (max-width: 660px) {
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .navber{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 8vh;
+        background-color: skyblue;
+        position: fixed;
+        /* box-shadow: 5px 5px black; */
+    }
+    .parents{
+        width: 100%;
+        height: 80vh;
+        /* background-color: gray; */
+        display: block;
+      
+    }
+    .welcome{
+        width: 100%;
+        background-color: blue;
+        background-image: url(images/hosptal2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+    }
+    .text >button{
+        width: 20%;
+        background-color: aquamarine;
+        margin-top: 1em;
+       
+    }
+    .text >h1{
+        margin-top: 1em;
+        
+    }
+
+    .text{
+        
+        margin-left: 5rem;
+        font-size: large;
+        margin-top: 3.5rem;
+      
+    }
+    .welcome1{
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        height: 50vh;
+        display: block;
+        text-align: justify;
+
+    }
+
+    .misson{
+        margin-left: 2rem;
+        width: 80%;
+        display: block;
+        height: 50%;
+        gap: 2%;
+    }
+   
+
+    .doctors{
+        width: 100%;
+        height: 60vh;
+        background-color: rgb(176, 218, 235);
+    }
+
+    .chief{
+        width: 80%;
+        height: 90%;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        margin-left: 3.5rem;
+        gap: 3%;
+    }
+
+    .doctor{
+        /* display: flex; */
+        border-radius: 15px;
+        width: 200px;
+        height: 400px;
+        background-color:whitesmoke;
+    }
+
+    .doctor >img{
+        width: 130px;
+        height: 200px;
+        margin-left: 1em;
+        margin-top: 2em;
+        border-radius: 110px;
+        /* margin: 0 0 10px; */
+    }
+
+    .doctors >h1{
+        font-size: 35px;
+        text-align: center;
+        margin-top: 1.5em;
+    }
+
+    .doctor >h2{
+        text-align: center;
+        font-size: 17px;
+    }
+    .doctor >p{
+        text-align: center;
+        margin:0 0 4px;
+    }
+    
+    .doctor >button{
+        /* align-items: center; */
+        /* display: flex; */
+        margin-left: 3em;
+        /* justify-content: center; */
+        border-radius:  10px ;
+        margin-top: 0.5rem;
+        width: 50%;
+        text-align: center;
+        background-color: rgb(163, 219, 241);
+        border: 3px black;
+        padding: 4px;
+    }
+
+    .theater{
+        /* width: 100%; */
+        height: 40vh;
+        display: block;
+        gap: 3%;
+        background-color: rgb(176, 218, 235);
+        
+    }
+    .theater1{
+        width: 40%;
+        height: 5%;
+        background-image: url(images/hosp3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+
+    .toggle .bar{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+    .navlinks.active{
+        display: block;
+    }
+    
 }
